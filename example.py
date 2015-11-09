@@ -112,8 +112,7 @@ y = boston.target
 
 rnd = check_random_state(0)
 
-ensemble = RandomForestRegressor(n_estimators=100, random_state=rnd, 
-                                 max_depth=3)
+ensemble = RandomForestRegressor(n_estimators=100, random_state=rnd)
 ensemble.fit(X,y)
 
 draw_ensemble(ensemble)
